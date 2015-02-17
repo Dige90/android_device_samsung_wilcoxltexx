@@ -1,1 +1,1 @@
-add_lunch_combo cm_wilcoxltexx-userdebug
+add_lunch_combo aicp_wilcoxltexx-userdebug
