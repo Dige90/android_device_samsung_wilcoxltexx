@@ -43,21 +43,19 @@ PRODUCT_PACKAGES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    nfc.msm8960 \
-    libnfc \
-    libnfc_jni \
-    Nfc \
+    NfcNci \
     Tag \
     com.android.nfc_extras
 
-# NFCEE access control
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/config/nfcee_access.xml:system/etc/nfcee_access.xml
+# NFC hal
+PRODUCT_PACKAGES += \
+    nfc_nci.pn54x.default
 
 # NFC configuration
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/nfc/config/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
-    $(LOCAL_PATH)/nfc/config/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
+    $(LOCAL_PATH)/nfc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
+    $(LOCAL_PATH)/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+    $(LOCAL_PATH)/nfc/nfcee_access.xml:system/etc/nfcee_access.xml
 
 # Audio configuration
 PRODUCT_COPY_FILES += \
@@ -166,7 +164,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.vr.enable=false \
     persist.audio.handset.mic=digital \
     audio.offload.disable=1 \
-    lpa.decode=false \
     persist.rild.nitz_plmn="" \
     persist.rild.nitz_long_ons_0="" \
     persist.rild.nitz_long_ons_1="" \
@@ -188,8 +185,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.timed.enable=true \
     persist.audio.lowlatency.rec=false \
     audio.gapless.playback.disable=true \
-    qcom.hw.aac.encoder=false \
-    persist.sys.media.use-awesome=true \
+    qcom.hw.aac.encoder=true \
+    media.aaccodectype=1 \
     ro.config.max_starting_bg=8 \
     mm.enable.smoothstreaming=true \
     camera2.portability.force_api=1 \
