@@ -9,8 +9,8 @@ ro.telephony.default_network=9
 
 # G3815 Hardware Info
 ro.device.chipset=Qualcomm Snapdragon S4
-ro.device.cpu=Krait 384, 1,73 Mhz
-ro.device.gpu=Qualcomm Adreno 305 @ 500 Mhz
-ro.device.rear_cam=5 MP
+ro.device.cpu=Krait 384 Mhz - 1,73 Mhz
+ro.device.gpu=Adreno 305 @ 500 Mhz
+ro.device.rear_cam=5.0 MP
 ro.device.front_cam=0.3 MP
 ro.device.screen_res=540x960
