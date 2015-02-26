@@ -21,7 +21,7 @@
 
 LOCAL_PATH := $(call my-dir)
 ifeq ($(BOARD_VENDOR),samsung)
-ifeq ($(TARGET_BOARD_PLATFORM),msm8930)
+ifeq ($(TARGET_BOARD_PLATFORM),msm8960)
 ifeq ($(TARGET_DEVICE), wilcoxltexx)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif
