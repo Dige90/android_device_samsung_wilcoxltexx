@@ -12,4 +12,4 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=wilcoxltexx TARGET_DEVICE=wilcoxlte
 
-PRODUCT_NAME := cm_wilcoxltexx
+PRODUCT_NAME := aicp_wilcoxltexx
